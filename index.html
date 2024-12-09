@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lawyer Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">logo<span>Estudio Jurídico</span></div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+            <div class="overlay"></div>
+            <h1>LAWYER</h1>
+            <div class="separator"></div>
+        </section>
+        <section class="services" id="servicios">
+            <h2>Servicios</h2>
+            <div class="carousel">
+                <button class="carousel-btn prev-btn">‹</button>
+                <div class="carousel-images">
+                    <img src="img/abogado.jpg" alt="Servicio 1">
+                    <img src="img/trafico.jpg" alt="Servicio 2">
+                    <img src="img/bienes.jpg" alt="Servicio 3">
+                </div>
+                <button class="carousel-btn next-btn">›</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+    <section class="contact" id="contacto">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contacto</h2>
+                <div class="divider"></div>
+                <ul>
+                    <li><i class="icon">📞</i> <span>Fono</span></li>
+                    <li><i class="icon">✉️</i> <span>Correo</span></li>
+                    <li><i class="icon">📍</i> <span>Dirección</span></li>
+                </ul>
+            </div>
+            <div class="contact-map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.940174724672!2d-122.0842496846818!3d37.422065379824774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5a5b5e5c239%3A0x4ad66d6a81ed4f92!2sGoogleplex!5e0!3m2!1sen!2sus!4v1633533665066!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+
+</body>
+</html>
