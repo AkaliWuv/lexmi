@@ -3,65 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lawyer Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Página de Abogado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">logo<span>Estudio Jurídico</span></div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
+
+
+
+    <header class="navbar">
+        <nav class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="hero" id="inicio">
-            <div class="overlay"></div>
-            <h1>LAWYER</h1>
-            <div class="separator"></div>
-        </section>
-        <section class="services" id="servicios">
-            <h2>Servicios</h2>
-            <div class="carousel">
-                <button class="carousel-btn prev-btn">‹</button>
-                <div class="carousel-images">
-                    <img src="img/abogado.jpg" alt="Servicio 1">
-                    <img src="img/trafico.jpg" alt="Servicio 2">
-                    <img src="img/bienes.jpg" alt="Servicio 3">
-                </div>
-                <button class="carousel-btn next-btn">›</button>
-            </div>
-        </section>
-    </main>
-    <script src="script.js"></script>
+    
+    
+<br>
 
-    <section class="contact" id="contacto">
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Contacto</h2>
-                <div class="divider"></div>
-                <ul>
-                    <li><i class="icon">📞</i> <span>Fono</span></li>
-                    <li><i class="icon">✉️</i> <span>Correo</span></li>
-                    <li><i class="icon">📍</i> <span>Dirección</span></li>
-                </ul>
+
+<!-- Header Section -->
+<header class="hero">
+    
+    <div class="hero-content">
+        <img src="img/logolexmi.png" alt="Logo">
+        <p>Compromiso y excelencia en asesoramiento legal</p>
+    </div>
+</header>
+
+<br>
+
+<section id="inicio" class="section intro">
+    <div class="content">
+        <h2>Abogados Comprometidos de Alto Grado de Especialización</h2>
+        <p>
+            Brindamos compromiso absoluto en el desarrollo de nuestros cometidos con una base profesional y ética para nuestros clientes.
+        </p>
+        <a href="#areas" class="cta-button">Conoce nuestras áreas de práctica</a>
+    </div>
+    <div class="side-image">
+        <img src="img/abogados-para-empresas.jpg" alt="Equipo Legal Profesional">
+    </div>
+</section>
+
+    <br>
+    
+    <!-- Áreas de Práctica Section -->
+    <section id="areas" class="section" style="background-image: url('img/bg_section.jpg'); background-size: cover; background-position: center;">
+        <h2>Áreas de Práctica</h2>
+        <div class="areas-practica">
+            <div class="area">
+                <img src="img/policia.png" alt="Policía Local" class="icon-medium">
+                <h3>Policía Local</h3>
+                <p>Asesoramiento y defensa en temas relacionados con la policía local y su normativa.</p>
             </div>
-            <div class="contact-map">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3123.940174724672!2d-122.0842496846818!3d37.422065379824774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5a5b5e5c239%3A0x4ad66d6a81ed4f92!2sGoogleplex!5e0!3m2!1sen!2sus!4v1633533665066!5m2!1sen!2sus" 
-                    width="100%" 
-                    height="300" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy">
-                </iframe>
+            <div class="area">
+                <img src="img/choque-de-autos.png" alt="Accidente de Tránsito" class="icon-medium">
+                <h3>Accidente de Tránsito</h3>
+                <p>Asesoramiento legal y gestión de accidentes de tránsito, tanto para víctimas como responsables.</p>
+            </div>
+            <div class="area">
+                <img src="img/inmobiliaria.png" alt="Inmobiliaria" class="icon-medium">
+                <h3>Inmobiliaria</h3>
+                <p>Gestión y asesoramiento en compra, venta y alquiler de propiedades.</p>
+            </div>
+            <div class="area">
+                <img src="img/seguro.png" alt="Propiedades de Autor" class="icon-medium">
+                <h3>Propiedades de Autor</h3>
+                <p>Asesoramiento legal sobre derechos de autor y gestión de propiedades intelectuales.</p>
             </div>
         </div>
     </section>
-    
 
+    <br>
+
+    <!-- Sedes Section -->
+    <section id="sedes" class="section contact-section">
+        <div class="contact-container">
+            <div class="office">
+                <h3>Oficinas en Santiago</h3>
+                <p>
+                    <img src="img/Map-Pin.svg" alt="Ubicación" class="icon-small"> 
+                    Amunátegui Número 277, Oficina 702, Santiago
+                </p>
+                <p>
+                    <img src="img/Phone.svg" alt="Teléfono" class="icon-small"> 
+                    +56 9 4435 3309
+                </p>
+                <p>
+                    <img src="img/Phone.svg" alt="Teléfono" class="icon-small"> 
+                    +56 9 8261 1726
+                </p>
+            </div>
+            
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6658.687091913765!2d-70.656369!3d-33.440355!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5263e1d6437%3A0xd38f7a6cb9ffc20c!2sLexmi%20Abogados%20SpA!5e0!3m2!1ses!2scl!4v1734971680298!5m2!1ses!2scl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <img src="img/logolexmi.png" alt="Logo">
+            <p>&copy; 2024 Lexmi Abogados. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
